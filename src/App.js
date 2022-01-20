@@ -11,6 +11,8 @@ import {
   Route,
   Redirect,
 } from "react-router-dom";
+import Login from "./pages/Login";
+import Cart from "./pages/Cart";
 
 function App() {
   return (
@@ -22,9 +24,14 @@ function App() {
         <Route exact path="/book/:id">
           <Book />
         </Route>
-  
+        <Route path="/login">
+          <Login />
+        </Route>
+        <Route path="/cart">
+          <Cart />
+        </Route>
       </Switch>
-  </Router>
+    </Router>
   );
 }
 
